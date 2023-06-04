@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Red Hat Display', sans-serif;
+
+}
+
+body {
+	background: url(images/pattern-background-desktop.svg);
+	background-color: hsl(225, 100%, 94%);
+	background-repeat: no-repeat;
+	background-size:contain;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.card {
+	width: 450px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.header img {
+	border-radius: 20px 20px 0 0;
+}
+
+.text-area {
+	text-align: center;
+	padding: 45px;
+	padding-top: 40px;
+	padding-bottom: 25px;
+}
+
+.text-area h1 {
+	font-size: 1.75rem;
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+}
+
+.text-area p {
+	padding-top: 20px;
+	color: hsl(224, 23%, 55%);
+}
+
+.plan {
+	width: 350px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: hsl(225, 100%, 98%);
+	padding: 25px ;
+}
+
+.plan .info {
+	display: flex;
+	align-items: center;
+}
+
+.plan img {
+	margin-right: 20px;
+}
+
+.plan h2 {
+	font-size: 1rem;
+	font-weight: 900;
+	color: hsl(223, 47%, 23%)
+}
+
+.plan p {
+	color: hsl(224, 23%, 55%);
+}
+
+.plan a {
+	font-weight: 900;
+	color: hsl(245, 75%, 52%);
+}
+
+.plan a:hover {
+	color: hsl(245, 83%, 68%);
+	text-decoration: none;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.payment {
+	border: none;
+	border-radius: 10px;
+	width: 350px;
+	background-color: hsl(245, 75%, 52%);
+	height: 48px;
+	color: white;
+	font-weight: 700;
+	font-size: 1rem;
+	margin: 35px;
+}
+
+
+.payment:hover {
+	background-color: hsl(245, 83%, 68%);
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.cancel-order {
+	color: hsl(224, 23%, 55%);
+	font-weight: 700;
+	margin-bottom: 48px;
+}
+
+.cancel-order:hover {
+	color: hsl(223, 47%, 23%);
+	cursor: pointer;
+	transition: 0.2s;
+}
